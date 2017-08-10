@@ -309,7 +309,7 @@ h6 {
 }
 
 #card-holder #v-card #profile img {
-  width: 340px;
+  width: 400px;
   height: auto;
 }
 
@@ -360,3 +360,255 @@ h6 {
     padding: 10px;
   }
 }
+
+#projects #projects-card {
+  overflow: hidden;
+}
+
+#projects #projects-card .project-content {
+  /* margin: top right bottom left*/
+  margin: 0 10px;
+}
+
+#projects #projects-card .project-content .grid figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#projects #projects-card .project-content .grid figure figcaption>a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#projects #projects-card .project-content figure.animate-up:hover figcaption::before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#projects #projects-card .project-content figure.animate-up:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width:747px) {
+  #projects #projects-card .project-content .big {}
+}
+
+@media (min-width:992px) {
+  #projects #projects-card .project-content .big {
+    width: 66.6%;
+  }
+}
+
+#projects #projects-card .project-content .grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 5px 7px 7px 5px;
+  /*  list-style: none; */
+  text-align: center;
+}
+
+#projects #projects-card .project-content .grid figure {
+  position: relative;
+  float: left;
+  margin: 0;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  overflow: hidden !important;
+  padding: 2px !important;
+}
+
+#projects #projects-card .project-content .grid figure img {
+  position: relative;
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#projects #projects-card .project-content .grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#projects #projects-card .project-content .grid figure figcaption>a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+#projects #projects-card .project-content .grid figure figcaption::before {
+  pointer-events: none;
+}
+
+#projects #projects-card .project-content .grid figure figcaption::after {
+  pointer-events: none;
+}
+
+#projects #projects-card .project-content .grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 100;
+  font-size: 22px;
+  margin: 0;
+}
+
+#projects #projects-card .project-content .grid figure h2 i {
+  display: block;
+  padding: 9px;
+  margin-top: 24px;
+  font-size: 48px;
+}
+
+#projects #projects-card .project-content .grid figure p {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 70.5%;
+}
+
+@media screen and (min-width:540px) and (max-width:766px) {
+  #projects #projects-card .project-content .grid {
+    max-width: 50%;
+  }
+}
+
+#projects #projects-card .project-content figure.animate-up {}
+
+#projects #projects-card .project-content figure.animate-up figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+#projects #projects-card .project-content figure.animate-up h2 {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+  color: rgba(72, 76, 97, 0.22);
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+  transition: transform 0.35s, color 0.35s;
+}
+
+#projects #projects-card .project-content figure.animate-up p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  opacity: 0;
+  color: #000;
+}
+
+#projects #projects-card .project-content figure.animate-up:hover {}
+
+#projects #projects-card .project-content figure.animate-up:hover h2 {
+  color: #b30000;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -10px, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -10px, 0);
+}
+
+#projects #projects-card .project-content figure.animate-scale {}
+
+#projects #projects-card .project-content figure.animate-scale img {
+  -webkit-transition: opacity 0.60s, -webkit-transform 0.60s;
+  transition: opacity 0.60s, transform 0.60s;
+}
+
+#projects #projects-card .project-content figure.animate-scale figcaption {
+  -webkit-transition: background-color 0.60s;
+  transition: background-color 0.60s;
+}
+
+#projects #projects-card .project-content figure.animate-scale figcaption::before {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  background: rgba(0, 0, 0, 0.7);
+  bottom: -1px;
+  left: -1px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.60s, -webkit-transform 0.60s;
+  transition: opacity 0.60s, transform 0.60s;
+}
+
+#projects #projects-card .project-content figure.animate-scale h2 {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+  color: rgba(72, 76, 97, 0.22);
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+  transition: transform 0.35s, color 0.35s;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+
+#projects #projects-card .project-content figure.animate-scale p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  opacity: 0;
+  color: #fff;
+  -webkit-transition: opacity 0.60s, -webkit-transform 0.60s;
+  transition: opacity 0.60s, transform 0.60s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#projects #projects-card .project-content figure.animate-scale:hover {}
+
+#projects #projects-card .project-content figure.animate-scale:hover h2 {
+  color: #b30000;
+  -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+  transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+  opacity: 1;
+}
+
+#projects #projects-card .project-content figure.animate-scale:hover figcaption::before {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#projects #projects-card .project-content figure.animate-scale:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#projects #projects-card .project-content figure.animate-scale:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+/**/
